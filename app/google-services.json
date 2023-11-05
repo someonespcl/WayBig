@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "517271033089",
+    "firebase_url": "https://way-big-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "way-big",
+    "storage_bucket": "way-big.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517271033089:android:09eaa2a1cf3876cc1db700",
+        "android_client_info": {
+          "package_name": "com.waybig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517271033089-l8fiejq13gotmr8jmp0ohauo5a788f9b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waybig",
+            "certificate_hash": "fd01354a7dee71a0a19769b6eb2d93772cb85d7c"
+          }
+        },
+        {
+          "client_id": "517271033089-2ovaqp6463jovjo3lf43pb02d1etkid2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXaBPtpjv0bdGINqOUEl_aWbRPaIzE1Vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517271033089-2ovaqp6463jovjo3lf43pb02d1etkid2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

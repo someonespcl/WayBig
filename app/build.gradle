@@ -1,0 +1,80 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.waybig'
+    buildToolsVersion "34.0.0"
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.waybig"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        renderscriptTargetApi 34
+        renderscriptSupportModeEnabled true
+        
+        vectorDrawables { 
+            useSupportLibrary true
+        }
+    }
+    
+    signingConfigs {
+        release {
+            storeFile file("waybig.jks")
+            storePassword "waybigbigway"
+            keyAlias "waybig"
+            keyPassword "waybigbigway"
+        }
+        debug {
+            storeFile file("waybig.jks")
+            storePassword "waybigbigway"
+            keyAlias "waybig"
+            keyPassword "waybigbigway"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.airbnb.android:lottie:6.1.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("com.github.ibrahimsn98:SmoothBottomBar:1.7.9")
+    implementation("com.github.yalantis:ucrop:2.2.8-native")
+    implementation("com.github.mmin18:realtimeblurview:1.2.1")
+    implementation platform("com.google.firebase:firebase-bom:32.3.1")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-storage")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+}

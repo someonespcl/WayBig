@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:scrollbars="none"
+     android:overScrollMode="never"
+     tools:context=".fragments.ProfileFragment">
+
+    <RelativeLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent">
+
+        <ImageView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/edit_outline"
+             android:layout_marginRight="20dp"
+             android:layout_alignParentRight="true"
+             android:layout_marginTop="20dp"
+             android:layout_alignParentTop="true"
+             android:id="@+id/editProfile" />
+
+        <ImageView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/camera_outline"
+             android:layout_marginRight="60dp"
+             android:layout_marginTop="20dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:id="@+id/camera" />
+
+        <ImageView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:src="@drawable/settings_outline"
+             android:layout_marginRight="100dp"
+             android:layout_marginTop="20dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:id="@+id/settings" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_marginTop="80dp">
+
+            <com.waybig.preferences.CircularImageView
+                 android:layout_height="200dp"
+                 android:layout_width="200dp"
+                 android:adjustViewBounds="true"
+                 android:id="@+id/profilePic" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:orientation="vertical">
+
+                <TextView
+                     android:layout_height="match_parent"
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:includeFontPadding="false"
+                     android:textSize="20sp"
+                     android:fontFamily="@font/poppins_medium"
+                     android:textAllCaps="false"
+                     android:textColor="@android:color/white"
+                     android:layout_marginTop="8dp"
+                     android:id="@+id/userProfileName" />
+
+                <TextView
+                     android:layout_height="match_parent"
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:includeFontPadding="false"
+                     android:fontFamily="@font/poppins_regular"
+                     android:textColor="@android:color/white"
+                     android:id="@+id/userProfileEmail" />
+
+                <TextView
+                     android:layout_height="match_parent"
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:includeFontPadding="false"
+                     android:fontFamily="@font/poppins_regular"
+                     android:textColor="@android:color/white"
+                     android:id="@+id/userProfilePhoneN" />
+
+                <TextView
+                     android:layout_height="match_parent"
+                     android:layout_width="wrap_content"
+                     android:textAlignment="center"
+                     android:hint="#Bio"
+                     android:fontFamily="@font/poppins_regular"
+                     android:textColor="@android:color/white"
+                     android:maxLength="120"
+                     android:id="@+id/userProfileBio"
+                     android:text="Hi\nMy self im Madhav\nI loves Sri Harsha." />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

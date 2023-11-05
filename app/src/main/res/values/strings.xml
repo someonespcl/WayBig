@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Way Big</string>
+    <string name="back"><u>Back</u></string>
+    <string name="personal_info">Personal Information</string>
+    <string name="user_info">User Information</string>
+</resources>
