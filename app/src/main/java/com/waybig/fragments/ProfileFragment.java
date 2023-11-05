@@ -60,9 +60,9 @@ public class ProfileFragment extends Fragment {
 
         emailTv = view.findViewById(R.id.userProfileEmail);
         nameTv = view.findViewById(R.id.userProfileName);
-        phone = view.findViewById(R.id.userProfilePhoneN);
+        //phone = view.findViewById(R.id.userProfilePhoneN);
         profilePic = view.findViewById(R.id.profilePic);
-        settings = view.findViewById(R.id.settings);
+        //settings = view.findViewById(R.id.settings);
 
         profilePic.setOnClickListener(
                 v -> {
@@ -70,10 +70,10 @@ public class ProfileFragment extends Fragment {
                     dialog.show();
                 });
 
-        settings.setOnClickListener(
+        /*settings.setOnClickListener(
                 v -> {
                     startActivity(new Intent(requireActivity(), ProfileSettingsActivity.class));
-                });
+                });*/
 
         viewModel = new ViewModelProvider(requireActivity()).get(UserViewModel.class);
         
